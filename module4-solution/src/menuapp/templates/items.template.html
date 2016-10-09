@@ -1,0 +1,9 @@
+<div class="col-xs-10">
+  <div class="col-xs-12" ng-repeat="item in $ctrl.items">
+    <span class="glyphicon glyphicon-ok"></span>
+	<em>{{ item.short_name }}</em> <span class="glyphicon glyphicon-arrow-right"></span> <strong>{{ item.name }}</strong>
+	<strong ng-if="item.price_large">[$ {{item.price_large.toFixed(2)}}]</strong>
+	<br>
+	&emsp; {{ item.description }}
+  </div>
+</div>

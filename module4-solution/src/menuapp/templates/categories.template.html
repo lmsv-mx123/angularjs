@@ -1,0 +1,8 @@
+<div class="col-xs-6">
+  <div class="col-xs-12" ng-repeat="category in $ctrl.categories">
+	<a ui-sref="items({categoryId: category.short_name})">
+	<span class="glyphicon glyphicon-plus"></span>
+	  {{ category.short_name }} <span class="glyphicon glyphicon-arrow-right"></span> {{ category.name }}
+	</a>
+  </div>
+</div>

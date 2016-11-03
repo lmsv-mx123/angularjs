@@ -1,0 +1,9 @@
+<div ng-if="myInfoCtrl.userLogged">
+  <my-info info=myInfoCtrl.userPreferences></my-info>
+  <br>
+  <user-menu-item menu-item="myInfoCtrl.userPreferences.userPreference"></user-menu-item>
+</div>
+
+<div ng-if="!myInfoCtrl.userLogged">
+  <span>Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></span>
+</div>

@@ -1,0 +1,15 @@
+<h2>Your Preferred Dish</h2>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="menu-item-photo">
+      <div>{{$ctrl.menuItem.short_name}}</div>
+      <img class="img-responsive" width="250" height="150"
+          ng-src="{{$ctrl.basePath}}/images/{{$ctrl.menuItem.short_name}}.jpg"
+          alt="{{$ctrl.menuItem.name}}">
+    </div>
+  </div>
+  <div class="menu-item-description col-sm-8">
+    <h3 class="menu-item-title">{{$ctrl.menuItem.name}}</h3>
+    <p class="menu-item-details">{{$ctrl.menuItem.description}}</p>
+  </div>
+</div>
